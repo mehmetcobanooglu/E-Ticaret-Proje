@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Askıda Elbise - İnci Giyim</title>
+    <link rel="stylesheet" href="../CSS/askidaelbiseyeni.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="metinyazisi">İnci Giyim</h1>
+        <nav>
+            <ul class="menü">
+                <li><a href="/anasayfa">Ana Sayfa</a></li>
+                <li>
+                    <a href="#">Kategoriler</a>
+                    <div class="dropdown">
+                        <div class="dropdown2">
+                            <div class="deneme"><a href="/erkek">Erkek</a></div>
+                            <div class="deneme"><a href="/kadin">Kadın</a></div>
+                            <div class="deneme"><a href="/erkekCocuk">Erkek Çocuk</a></div>
+                            <div class="deneme"><a href="/kizCocuk">Kız Çocuk</a></div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="/askidakielbiseler">Askıdaki Elbiseler</a></li>
+                <li><a href="/sepet">Sepet</a></li>
+                <li><a href="/odeme">Ödeme</a></li>
+            </ul>
+        </nav>
+
+        <div class="cta">
+            <a class="cta" id="girisBtn" href="/login">
+                <button class="kullaniciBtn">Kullanıcı Girişi</button>
+            </a>
+
+            <a class="cta" id="hesapBtn" href="/hesap" >
+                <button class="kullaniciBtn"><span id="welcomeMessage"></span></button>
+            </a>
+            
+        </div>
+    </header>
+    <h3 class="baslik">Askıda Elbise</h3>
+    <div id="productContainer" class="product-showcase">
+        <% urunler.forEach(urun=> { %>
+            <div class="urunler">
+                <!-- <h3><%= urun.isim %></h3>
+                <img src="<%= urun.resim_yolu %>" alt="<%= urun.isim %>">
+                <p>Fiyat: <%= urun.fiyat %> TL</p>  -->
+               
+            </div>
+        <% }) %>
+    </div>
+
+    <script src="../JAVASCRİPT/askidaelbise.js"></script>
+</body>
+</html>

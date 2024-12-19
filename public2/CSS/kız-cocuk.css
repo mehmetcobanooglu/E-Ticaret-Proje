@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/* Genel stil */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f0f0;
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
+}
+
+h1, h2, h3 {
+    font-weight: 100;
+    color: #121211;
+}
+
+footer {
+    text-align: center;
+    padding: 8.5px;
+    background-color: #46315b;
+    color: white;
+}
+
+/* Başlık ve Menü */
+.metinyazisi {
+    font-weight: 100;
+}
+
+.menü {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menü li {
+    margin: 0 20px;
+    position: relative;
+}
+
+.menü li a {
+    color: #46315b;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menü li a:hover {
+    color: #b76ffe;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 85%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Bölümü */
+.hero {
+    padding: 20px 10%;
+    margin: 20px 0;
+}
+
+.hero h2 {
+    font-size: 2em;
+    color: #121211;
+}
+
+/* Ürünler */
+.product-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.urunler {
+    flex: 0 1 calc(20% - 20px); /* Her bir ürün %20 genişlik alacak */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.urunler img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    max-height: 300px;
+}
+
+.urunler h3 {
+    font-size: 1.2em;
+    color: #121211;
+    margin: 10px 0;
+}
+
+.urunler p {
+    font-size: 1em;
+    color: #46315b;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #b76ffe;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #9a5ec3;
+}
+
+/* Duyarlı Tasarım (Responsive Design) */
+@media (max-width: 768px) {
+    .hero {
+        padding: 20px;
+    }
+
+    .product-showcase {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .urunler {
+        flex: 0 1 100%;
+        margin-bottom: 20px;
+    }
+
+    .menü {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menü li {
+        margin-bottom: 10px;
+    }
+
+    .cta button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+select {
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 200px;
+}
+label{
+    display: block;
+    margin-top:15px;
+    font-size:14px;
+    color:#46315b;
+    font-weight: 500;
+}
+.urun-aciklama{
+    margin-top:10px;
+    padding:10px;
+    background-color: #f9f9f9;
+    border:1px solid #ddd;
+    border-radius: 5px;
+    color:#333;
+    display: block;
+}
+.gizli{
+    display: none;
+}
+.urun-ayrintilari{
+    margin-top:10px;
+    padding:5px 10px;
+    background-color: none;
+    color:#fff;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3;
+}
+.urun-ayrintilari:hover{
+    background-color: #3b1535;
+}

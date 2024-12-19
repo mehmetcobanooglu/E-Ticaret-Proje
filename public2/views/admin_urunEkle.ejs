@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürün Ekle - İnci Giyim</title>
+    <link rel="stylesheet" href="../CSS/admin1.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>Admin Paneli</h2>
+        <ul>
+            <li><a href="admin_urunEkle">Ürün Ekle</a></li>
+            <li><a href="admin_urunSil">Ürün Sil</a></li>
+            <li><a href="admin_urunGuncelle">Ürünü Güncelle</a></li>
+            <li><a href="admin_tumUrunler">Tüm Ürünleri Göster</a></li>
+            <li><a id="yardim" href="help">Tc Kimlik Ekle</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Yeni Ürün Ekle</h1>
+        <form id="urunEkleForm" enctype="multipart/form-data" >
+            <input class="a" type="text" name="isim" placeholder="Ürün Adını Giriniz..." required><br>
+            <input class="a" type="number" name="fiyat" step="0.01" placeholder="Ürün Fiyatını Giriniz..."><br>
+            <textarea class="a" name="aciklama" placeholder="Ürün Hakkında Bilgi Giriniz..."></textarea><br>
+            <input class="a" type="text" name="kategori" placeholder="Ürün Kategorisini Giriniz..."><br>
+            <input class="a" type="number" name="kodu" step="0.01" placeholder="Ürün Kodunu Giriniz..."><br>
+            <input class="a" type="number" name="stok" required placeholder="Stok Sayısını Giriniz..."><br>
+            <input class="a" type="file" name="resim" accept="image/*"><br>
+            <input class="a" type="text" name="renk" placeholder="Ürün Renklerini Giriniz... (Virgülle ayırın)"
+                required><br>
+            <input class="a" type="text" name="beden" placeholder="Ürün Bedenlerini Giriniz... (Virgülle ayırın)"
+                required><br>
+
+            <button class="urunButon" type="submit">Ürünü Ekle</button>
+            <div id="statusMessage"></div>
+
+            
+        </form>
+     
+    </div>
+    <script src="../JAVASCRİPT/admin.js"></script>
+</body>
+
+</html>

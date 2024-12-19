@@ -1,0 +1,241 @@
+/* Genel stil */@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.metinyazisi {
+    font-weight: 100;
+    
+}
+.baslik{
+    margin-top: 150px;
+    margin-left: 100px;
+    font-size: 30px;
+
+}
+
+.menü {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menü li {
+    margin: 0 20px;
+    position: relative;
+}
+.deneme {
+    flex-basis: 50%;
+}
+button.ekle {
+    padding: 10px 20px;
+    background-color: #b76ffe;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}button {
+    padding: 10px 20px;
+    background-color: #b76ffe;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #9a5ec3;
+}
+.menü li a {
+    color: #46315b;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.dropdown2 a {
+    color: #ccc
+}
+
+
+.menü li a:hover {
+    color: #050404;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 10%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #e5e3e6;
+    z-index: 1;
+    border-radius: 10px;
+    list-style: none;
+    padding: 10%;
+}
+
+.dropdown2 {
+    display: flex;
+    width: 220px;
+    flex-wrap: wrap;
+}
+
+li:hover .dropdown {
+    display: flex;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 100;
+    color: #121211;
+}
+img {
+    max-width: 200px;
+    max-height: 300px;
+}
+
+/* Ürün konteyneri */
+#productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+/* Ürün kartı */
+.urunler {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.urunler:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Ürün başlığı */
+.urunler h3 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Ürün resmi */
+.urunler img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Ürün fiyat ve açıklama */
+.urunler p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Seçenekler (Renk ve Beden) */
+.urunler label {
+    display: block;
+    font-size: 14px;
+    color: #444;
+    margin: 8px 0 4px;
+}
+
+.urunler select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Bağış Yap butonu */
+.bagis-yap {
+    background-color: #9f3caa;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.bagis-yap:hover {
+    background-color: #420060;
+}
+
+
+select {
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 200px;
+}
+.urun-aciklama {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #333;
+    display: block; /* Varsayılan olarak açık */
+}
+
+/* Gizli sınıf */
+.gizli {
+    display: none;
+}
+
+/* Ayrıntı butonu */
+.urun-ayrintilari {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: none;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.urun-ayrintilari:hover {
+    background-color: #3b1535;
+}

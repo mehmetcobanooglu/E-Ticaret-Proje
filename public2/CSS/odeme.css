@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 10%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.metinyazisi {
+    font-weight: 100;
+}
+
+.menü {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menü li {
+    margin: 0 20px;
+    position: relative;
+}
+.hero {
+    padding: 20px 10%;
+    margin: 20px 0;
+}
+
+.urunler:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero h2 {
+    margin-top: 115px;
+    font-size: 2em;
+    color: #121211;
+}
+.menü li a {
+    color: #46315b;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menü li a:hover {
+    color: #050404;
+}
+
+li:hover .dropdown {
+    display: flex;
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #b76ffe;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #9a5ec3;
+}
+button.ekle {
+    padding: 10px 20px;
+    background-color: #b76ffe;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #e5e3e6;
+    z-index: 1;
+    border-radius: 10px;
+    list-style: none;
+    padding: 10%;
+}
+
+.dropdown2 {
+    display: flex;
+    width: 220px;
+    flex-wrap: wrap;
+}
+
+.dropdown2 a {
+    color: #ccc
+}
+
+.deneme {
+    flex-basis: 50%;
+}
+
+label {
+    display: block;
+    /* Ürün ayrıntıları butonunun altına alır */
+    margin-top: 15px;
+    /* Buton ile araya mesafe koyar */
+    font-size: 14px;
+    color: #46315b;
+    font-weight: 500;
+}
+
+h1,h2,h3 {
+    font-weight: 100;
+    color: #121211;
+}
+#odeme-form{
+   margin-top:144px;
+   margin-left:350px;
+}

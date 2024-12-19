@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+* {
+  box-sizing: border-box;
+} 
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f0f0;
+    margin: 0;
+    padding: 0;
+    margin-top: 124px;
+}
+.urunler h3 {
+  font-size: 1.2em;
+  color: #121211;
+  margin: 10px 0;
+}
+header { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    padding: 20px 10%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.metinyazisi {
+    font-weight: 100;
+}
+.hero {
+  padding: 20px 10%;
+  margin: 20px 0;
+}
+.hero h2 {
+  
+  font-size: 25px;
+  color: #121211;
+}
+.xx{
+ 
+  font-size: 2em;
+  color: #121211;
+}
+.menü {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menü li {
+    margin: 0 20px;
+    position: relative;
+}
+button {
+    padding: 10px 20px;
+    background-color: #b76ffe;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #9a5ec3;
+}
+
+
+
+.menü li a {
+    color: #46315b;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.dropdown2 a{
+    color:#ccc
+}
+
+
+.menü li a:hover {
+    color: #050404;
+} 
+
+label {
+  display: block; /* Ürün ayrıntıları butonunun altına alır */
+  margin-top: 15px; /* Buton ile araya mesafe koyar */
+  font-size: 14px;
+  color: #46315b;
+  font-weight: 500;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #e5e3e6;
+  z-index: 1;
+  border-radius: 10px;
+  list-style: none;
+  padding: 10%;
+}
+
+.dropdown2 {
+  display: flex;
+  width: 220px;
+  flex-wrap: wrap;
+}
+.deneme {
+    flex-basis: 50%;
+}
+
+li:hover .dropdown {
+    display: flex;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 100;
+    color: #121211;
+}
+
+img {
+  max-width: 200px;
+  max-height: 300px;
+}
+/* ürün */
+.urunler {
+  flex: 0 1 calc(20% - 10px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+}
+.urunler img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  max-height: 300px;
+}
+.urunler h3 {
+  font-size: 1.2em;
+  color: #121211;
+  margin: 10px 0;
+}
+
+.urunler p {
+  font-size: 1em;
+  color: #46315b;
+  margin-bottom: 10px;
+}
+
+.product-showcase {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 20px 0;
+ 
+}
+button.ekle {
+  padding: 10px 20px;
+  background-color: #b76ffe;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+select {
+  margin: 5px 0;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 200px;
+}
+.urun-aciklama{
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #333;
+  display: block;
+}
+
+.gizli{
+  display: none;
+}
+
+.urun-ayrintilari{
+  margin-top:10px;
+  padding: 5px 10px;
+  background-color: none;
+  color:#fff;
+  border:none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.urun-ayrintilari:hover{
+  background-color:  #3b1535;
+} 
+
+
+/* Bildirim kutusunun temel stilini oluşturuyoruz */
+/* Bildirim kutusunun temel stilini oluşturuyoruz */
+.statusMessage {
+  margin-top: 104px;
+  position: fixed;
+  top: 20px;
+  right: -300px;  /* Başlangıçta sağda görünmesin */
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 9999;
+  opacity: 0;
+  transition: right 0.5s ease, opacity 0.5s ease; /* Animasyon */
+}
+
+/* Başarı mesajı için stil */
+.success-message {
+  color: green;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+}
+
+/* Hata mesajı için stil */
+.error-message {
+  color: red;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+}
+
+/* Bildirim kutusunun sağa kaymasını sağlıyoruz */
+.statusMessage.show {
+  right: 20px;
+  opacity: 1;
+}

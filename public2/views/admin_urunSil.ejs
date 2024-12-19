@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürün Sil - İnci Giyim</title>
+    <link rel="stylesheet" href="../CSS/admin1.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Paneli - Ürün Sil</h1>
+    </header>
+
+    <div class="sidebar">
+        <h2>Admin Paneli</h2>
+        <ul>
+            <li><a id="ekle1" href="admin_urunEkle">Ürün Ekle</a></li>
+            <li><a href="admin_urunSil">Ürün Sil</a></li>
+            <li><a href="admin_urunGuncelle">Ürünü Güncelle</a></li>
+            <li><a id="tum1" href="admin_tumUrunler">Tüm Ürünleri Göster</a></li>
+            <li><a  id= "yardim"href="help">Tc Kimlik Ekle</a></li>
+        </ul>
+    </div>
+
+    <section>
+        <h2>Ürün Silme</h2>
+        <form id="silForm" method="POST" action="/admin_urunSil">
+            <label for="kodu">Silinecek Ürün Kodu:</label>
+            <input type="text" id="kodu" name="kodu" required>
+            <button type="submit">Ürünü Sil</button>
+            <div id="statusMessage">
+                <% if (typeof message !=='undefined' ) { %>
+                    <p>
+                        <%= message %>
+                    </p>
+                    <% } %>
+            </div>
+        </form>
+   
+        <div id="message"></div>
+    </section>
+
+    <script src="../JAVASCRİPT/admin.js"></script>
+</body>
+</html>

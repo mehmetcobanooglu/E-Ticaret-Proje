@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erkek - İnci Giyim</title>
+    <link rel="stylesheet" href="../CSS/erkek.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="metinyazisi">İnci Giyim</h1>
+        <nav>
+            <ul class="menü">
+                <li><a href="/anasayfa">Ana Sayfa</a></li>
+                <li><a href="/erkek">Erkek</a></li>
+                <li><a href="/kadin">Kadın</a></li>
+                <li><a href="/kizCocuk">Kız Çocuk</a></li>
+                <li><a href="/erkekCocuk">Erkek Çocuk</a></li>
+                <li><a href="/sepet">Sepet</a></li>
+            </ul>
+        </nav>
+        <div class="cta"> 
+            <a class="cta" id="girisBtn" href="/login" style="display: none;">
+                <button class="kullaniciBtn">Kullanıcı Girişi</button>
+            </a>
+            <a class="cta" id="hesapBtn" href="/hesap" style="display: none;">
+                <button class="kullaniciBtn"><span id="welcomeMessage"></span></button>
+            </a>
+           
+        </div>
+    </header>
+
+    <div class="hero">
+        <h2>Erkek Kategorisi</h2>
+        <div id="productContainer" class="product-showcase">
+            <% urunler.forEach(urun=> { %>
+                <div class="urunler">
+                    <!-- <h3><%= urun.isim %> </h3>
+                    <img src="<%= urun.resim_yolu %>" alt="<%= urun.isim %>">
+                    <p>Fiyat: <%= urun.fiyat %> TL</p>
+                   -->
+                </div>
+                <% }) %>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 İnciGiyim. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="../JAVASCRİPT/erkek.js" defer></script>
+</body>
+
+</html>

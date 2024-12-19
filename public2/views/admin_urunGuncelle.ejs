@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürün Güncelle - İnci Giyim</title>
+    <link rel="stylesheet" href="../CSS/admin_urunGuncelle.css">
+
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>Admin Paneli</h2>
+        <ul>
+            <li><a href="admin_urunEkle">Ürün Ekle</a></li>
+            <li><a href="admin_urunSil">Ürün Sil</a></li>
+            <li><a href="admin_urunGuncelle">Ürünü Güncelle</a></li>
+            <li><a href="admin_tumUrunler">Tüm Ürünleri Göster</a></li>
+            <li><a  id= "yardim"href="help">Tc Kimlik Ekle</a></li>
+        </ul>
+    </div>
+    <form id="urunGuncelleForm" action="/admin_urunGuncelle" method="POST">
+        <label for="kodu">Ürün Kodu:</label>
+        <input type="text" id="kodu" name="kodu" required>
+
+        <label for="urunAdi">Yeni Ürün Adı:</label>
+        <input type="text" id="urunAdi" name="isim">
+
+        <label for="urunFiyati">Yeni Ürün Fiyatı:</label>
+        <input type="text" id="urunFiyati" name="fiyat">
+
+        <label for="urunAciklamasi">Yeni Ürün Açıklaması:</label>
+        <textarea id="urunAciklamasi" name="aciklama"></textarea>
+
+        <button type="submit">Güncelle</button>
+        <div id="statusMessage">
+            <% if (typeof message !=='undefined' ) { %>
+                <p>
+                    <%= message %>
+                </p>
+                <% } %>
+        </div>
+    </form>
+
+
+    <script src="../JAVASCRİPT/admin.js"></script>
+
+</body>
+
+</html>

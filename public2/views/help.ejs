@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tc Ekle - İnci Giyim</title>
+    <link rel="stylesheet" href="../CSS/admin1.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Admin Paneli</h2>
+        <ul>
+            <li><a id="ekle" href="admin_urunEkle">Ürün Ekle</a></li>
+            <li><a href="admin_urunSil">Ürün Sil</a></li>
+            <li><a href="admin_urunGuncelle">Ürünü Güncelle</a></li>
+            <li><a id="tum" href="admin_tumUrunler">Tüm Ürünleri Göster</a></li>
+        </ul>
+    </div>
+    <div class="div1">
+        <form action="/tcEkle" method="post">
+            <label for="tckimlik">Tc Kimlik Numarası :</label>
+            <input type="number" id="tckimlik" name="tckimlik" required ">
+            <input type="submit" value="Ekle">
+            <div id="statusMessage">
+                <% if (typeof message !=='undefined' ) { %>
+                    <p>
+                        <%= message %>
+                    </p>
+                    <% } %>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
